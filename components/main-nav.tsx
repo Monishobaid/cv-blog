@@ -15,10 +15,10 @@ export function MainNav() {
         <span className="font-bold">{siteConfig.name}</span>
       </Link>
       <Link
-        href="/blog"
+        href="/content/blog"
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
-          pathname === "/blog" ? "text-foreground" : "text-foreground/60"
+          pathname === "/content/blog" ? "text-foreground" : "text-foreground/60"
         )}
       >
         Blog
@@ -31,6 +31,24 @@ export function MainNav() {
         )}
       >
         About
+      </Link>
+      <Link
+        href="/content/products"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/content/products" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Products
+      </Link>
+      <Link
+        href="/lifestories"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/lifestories" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Life stories
       </Link>
     </nav>
   );

@@ -10,20 +10,24 @@ export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5);
   return (
     <>
-      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
-        <div className="container flex flex-col gap-4 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
+      {/* Hero Section with Gradient Background */}
+      <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 text-center">
+        <div className="container mx-auto flex flex-col items-center gap-6">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight drop-shadow-md">
             Hello, I&apos;m Rishabh
           </h1>
-          <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-PM for a reason, not for a season.
+          <p className="max-w-2xl text-lg sm:text-2xl font-medium drop-shadow-md">
+            PM for a reason, not for a season.
           </p>
-          <div className="flex flex-col gap-4 justify-center sm:flex-row">
+          <div className="flex gap-4 justify-center mt-6">
             <Link
-              href="/blog"
-              className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-fit")}
+              href="/content/blog"
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "px-6 py-3 font-semibold bg-white text-blue-600 rounded-lg shadow-md hover:bg-blue-100 transition-colors"
+              )}
             >
-              View my blog
+              View Blog
             </Link>
             <Link
               href={siteConfig.links.github}
@@ -31,32 +35,38 @@ PM for a reason, not for a season.
               rel="noreferrer"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "w-full sm:w-fit"
+                "px-6 py-3 font-semibold text-white border-white border-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
               )}
             >
-              hello world
+              Hello World
             </Link>
           </div>
         </div>
       </section>
-      <section className="container max-w-4xl py-6 lg:py-10 flex flex-col space-y-6 mt-60">
-        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center">
+
+      {/* Latest Posts Section */}
+      <section className="container max-w-3xl py-16 space-y-10 mt-10">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-center text-blue-600">
           Latest Posts
         </h2>
-        <ul className="flex flex-col">
-          {latestPosts.map((post) => (
-            post.published && (
-              <li key={post.slug} className="first:border-t first:border-border">
-                <PostItem
-                  slug={post.slug}
-                  title={post.title}
-                  description={post.description}
-                  date={post.date}
-                  tags={post.tags}
-                />
-              </li>
-            )
-          ))}
+        <ul className="space-y-6">
+          {latestPosts.map(
+            (post) =>
+              post.published && (
+                <li
+                  key={post.slug}
+                  className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 transition-shadow hover:shadow-2xl"
+                >
+                  <PostItem
+                    slug={post.slug}
+                    title={post.title}
+                    description={post.description}
+                    date={post.date}
+                    tags={post.tags}
+                  />
+                </li>
+              )
+          )}
         </ul>
       </section>
     </>

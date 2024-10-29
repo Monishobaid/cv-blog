@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "products/product-1",
+    "title": "Product 1: Innovative Gadget",
+    "description": "Explore the features and benefits of Product 1, our latest innovative gadget.",
+    "date": "2024-10-26T00:00:00.000Z",
+    "published": true,
+    "price": 200,
+    "inStock": true,
+    "tags": [
+      "gadgets",
+      "innovation",
+      "tech"
+    ],
+    "body": "const{Fragment:e,jsx:t,jsxs:n}=arguments[0];function _createMdxContent(r){const i={a:\"a\",blockquote:\"blockquote\",h1:\"h1\",h2:\"h2\",hr:\"hr\",img:\"img\",li:\"li\",p:\"p\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...r.components};return n(e,{children:[t(i.h1,{id:\"product-1-the-innovative-gadget\",children:t(i.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#product-1-the-innovative-gadget\",children:\"Product 1: The Innovative Gadget\"})}),\"\\n\",n(i.p,{children:[\"Introducing \",t(i.strong,{children:\"Product 1\"}),\", a cutting-edge gadget designed to revolutionize your daily life. This device is packed with the latest technology to help you stay ahead of the curve.\"]}),\"\\n\",t(i.h2,{id:\"features\",children:t(i.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#features\",children:\"Features\"})}),\"\\n\",n(i.ul,{children:[\"\\n\",n(i.li,{children:[t(i.strong,{children:\"Long Battery Life\"}),\": Enjoy uninterrupted usage for up to 48 hours.\"]}),\"\\n\",n(i.li,{children:[t(i.strong,{children:\"High Resolution Display\"}),\": Crisp visuals with a 4K display.\"]}),\"\\n\",n(i.li,{children:[t(i.strong,{children:\"Lightweight\"}),\": Compact design for easy portability.\"]}),\"\\n\"]}),\"\\n\",t(i.p,{children:t(i.img,{src:\"https://example.com/path-to-image.jpg\",alt:\"Product Image\"})}),\"\\n\",t(i.h2,{id:\"why-choose-product-1\",children:t(i.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#why-choose-product-1\",children:\"Why Choose Product 1?\"})}),\"\\n\",n(i.p,{children:[\"Product 1 is designed with the modern user in mind, balancing \",t(i.strong,{children:\"functionality\"}),\" and \",t(i.strong,{children:\"style\"}),\". Whether you’re at work, at home, or on the go, this gadget meets your needs seamlessly.\"]}),\"\\n\",t(i.h2,{id:\"specifications\",children:t(i.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#specifications\",children:\"Specifications\"})}),\"\\n\",n(i.table,{children:[t(i.thead,{children:n(i.tr,{children:[t(i.th,{children:\"Feature\"}),t(i.th,{children:\"Description\"})]})}),n(i.tbody,{children:[n(i.tr,{children:[t(i.td,{children:\"Battery Life\"}),t(i.td,{children:\"Up to 48 hours\"})]}),n(i.tr,{children:[t(i.td,{children:\"Weight\"}),t(i.td,{children:\"1.2 lbs\"})]}),n(i.tr,{children:[t(i.td,{children:\"Display\"}),t(i.td,{children:\"4K Ultra HD\"})]})]})]}),\"\\n\",n(i.p,{children:[\"Get your hands on \",t(i.strong,{children:\"Product 1\"}),\" today and experience innovation like never before!\"]}),\"\\n\",n(i.blockquote,{children:[\"\\n\",t(i.p,{children:'\"This gadget has transformed my daily routine!\" — Happy Customer'}),\"\\n\"]}),\"\\n\",t(i.hr,{}),\"\\n\",n(i.p,{children:[\"For more details, check out our official \",t(i.a,{href:\"https://example.com/product-1\",children:\"product page\"}),\".\"]})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?t(n,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "product-1"
+  }
+]
